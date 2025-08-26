@@ -88,7 +88,7 @@ const App = () => {
               </div>
             </div>
             <div className="bg-[#465C88] p-8 rounded-[3rem] shadow-xl text-center hover:scale-105 transition-transform duration-300 transform-gpu cursor-pointer">
-              <h3 className="text-xl md:text-2xl text-whitet font-bold">View the Leaderboard</h3>
+              <h3 className="text-xl md:text-2xl text-white font-bold">View the Leaderboard</h3>
               <div className="mt-4 flex justify-center items-center">
                 <div className="bg-purple-500 p-3 rounded-full shadow-lg text-white font-bold text-sm">
                   <Trophy />
