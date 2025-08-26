@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+header , .slogan, .bigbackground {
+  background-image: url('/Background-Image.png');
+
+}
