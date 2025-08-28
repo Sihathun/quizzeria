@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 // Using a simple placeholder instead of an SVG icon.
-const GraduationCap = () => <span><img src="/Logo.svg" alt="" /></span>;
+const GraduationCap = () => <span className="w-8 h-8 md:w-10 md:h-10 text-teal-500" ><img src="/Logo.svg" alt="" /></span>;
 
 // The main application component
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       {/* Header Section */}
       <header className="bg-[#39627F] p-4 md:p-6 lg:p-8 flex justify-between items-center z-10 relative shadow-md">
         <div className="flex items-center space-x-2">
-          <Link href="/"><GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-teal-500" /></Link>
+          <Link href="/"><GraduationCap /></Link>
         </div>
         <nav className="flex items-center space-x-4">
           <Link href="" passHref>
