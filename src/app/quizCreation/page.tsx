@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 // Using a simple placeholder instead of an SVG icon.
-const GraduationCap = () => <span><img src="/Logo.svg" alt="" /></span>;
+const GraduationCap = () => <span className="w-8 h-8 md:w-10 md:h-10 text-teal-500" ><img src="/Logo.svg" alt="" /></span>;
 
 // The main application component
 const App = () => {
@@ -17,14 +17,14 @@ const App = () => {
   };
 
   // Function to handle adding a new answer to a specific question
-  const addAnswer = (questionIndex) => {
+  const addAnswer = (questionIndex: number) => {
     const newQuestions = [...questions];
     newQuestions[questionIndex].answers.push({ text: '', isCorrect: false });
     setQuestions(newQuestions);
   };
 
   // Function to handle input changes for questions and answers
-  const handleInputChange = (e, questionIndex, answerIndex = null) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, questionIndex: number, answerIndex: number | null = null) => {
     const { name, value, type, checked } = e.target;
     const newQuestions = [...questions];
 
@@ -51,7 +51,7 @@ const App = () => {
       {/* Header Section */}
       <header className="bg-[#39627F] p-4 md:p-6 lg:p-8 flex justify-between items-center z-10 relative shadow-md">
         <div className="flex items-center space-x-2">
-          <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-teal-500" />
+          <GraduationCap />
         </div>
         <nav className="flex items-center space-x-4">
           <Link href="/login" passHref>

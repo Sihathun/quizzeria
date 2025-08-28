@@ -10,8 +10,15 @@ const Eye = () => <span><img src="/eye.svg" alt="" /></span>;
 const Pencil = () => <span><img src="/magicpen.svg" alt="" /></span>;
 const Trophy = () => <span><img src="/award.svg" alt="" /></span>;
 
+interface QuizCardProps {
+  title: string;
+  subtitle: string;
+  color: string;
+  className?: string;
+}
+
 // A simple component for a quiz card
-const QuizCard = ({ title, subtitle, color, className = '' }) => {
+const QuizCard = ({ title, subtitle, color, className = '' }: QuizCardProps) => {
   return (
     <div className={`p-6 md:p-8 rounded-[3rem] shadow-xl hover:scale-105 transition-transform duration-300 transform-gpu cursor-pointer relative ${color} ${className}`}>
       <div className="font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight">
