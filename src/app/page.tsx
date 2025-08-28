@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 // The icons have been replaced with simple placeholder text.
 const Search = () => <span><img src="/Search.svg" alt="" /></span>;
@@ -37,9 +38,11 @@ const App = () => {
           <a href="#" className="text-white font-semibold hover:underline">About Us</a>
           <a href="#" className="text-white font-semibold hover:underline">Contact Us</a>
           <div className="space-x-2 hidden md:block">
-            <button className="bg-white text-[#39627F]-500 font-semibold px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">
+            <Link href="/loginAndsignup/login">
+              <button className="bg-white text-[#39627F]-500 font-semibold px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">
               Login
             </button>
+            </Link>
             <button className="bg-white text-[#39627F]-500 font-semibold px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">
               Sign Up
             </button>
@@ -58,9 +61,11 @@ const App = () => {
             </span>
           </h1>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
+
             <button className="bg-yellow-400 text-teal-800 font-bold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-colors">
               Explore Quizzes
             </button>
+
             <button className="bg-orange-500 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 transition-colors">
               Sign Up!
             </button>
@@ -79,14 +84,16 @@ const App = () => {
                 </div>
               </div>
             </div>
+            <Link href="/quizCreation">
             <div className="bg-[#465C88] p-8 rounded-[3rem] shadow-xl text-center hover:scale-105 transition-transform duration-300 transform-gpu cursor-pointer">
-              <h3 className="text-xl md:text-2xl text-white font-bold">Create your own quiz!</h3>
+                <h3 className="text-xl md:text-2xl text-white font-bold">Create your own quiz!</h3>
               <div className="mt-4 flex justify-center items-center">
                 <div className="bg-green-500 p-3 rounded-full shadow-lg text-white font-bold text-sm">
                   <Pencil />
                 </div>
               </div>
             </div>
+            </Link>
             <div className="bg-[#465C88] p-8 rounded-[3rem] shadow-xl text-center hover:scale-105 transition-transform duration-300 transform-gpu cursor-pointer">
               <h3 className="text-xl md:text-2xl text-white font-bold">View the Leaderboard</h3>
               <div className="mt-4 flex justify-center items-center">
