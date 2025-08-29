@@ -50,9 +50,11 @@ const App = () => {
               Login
             </button>
             </Link>
+            <Link href="/loginAndsignup/signup">
             <button className="bg-white text-[#39627F]-500 font-semibold px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">
               Sign Up
             </button>
+            </Link>
           </div>
         </nav>
       </header>
@@ -72,10 +74,11 @@ const App = () => {
             <button className="bg-yellow-400 text-teal-800 font-bold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-colors">
               Explore Quizzes
             </button>
-
+            <Link href="/loginAndsignup/signup">
             <button className="bg-orange-500 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 transition-colors">
               Sign Up!
             </button>
+            </Link>
           </div>
         </div>
 
