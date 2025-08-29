@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 // Using a simple placeholder instead of an SVG icon.
-const GraduationCap = () => <span className="w-8 h-8 md:w-10 md:h-10 text-teal-500" ><img src="/Logo.svg" alt="" /></span>;
+const GraduationCap = () => <span ><img src="/Logo.svg" alt="" /></span>;
 
 // The main application component
 const App = () => {
